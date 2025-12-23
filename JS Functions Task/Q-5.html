@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        background: rgb(18, 18, 18);
+    }
+
+    h1 {
+        color: rgb(158, 158, 158);
+        font-size: 50px;
+    }
+</style>
+
+<body>
+    <h1>
+        <center>
+            <u>5. Reverse</u>
+        </center>
+    </h1>
+
+    <script>
+        function Number(num) {
+            let reverse = 0;
+
+            while (num > 0) {
+                reverse = reverse * 10 + (num % 10);
+                num = Math.floor(num / 10);
+            }
+
+            return reverse;
+        }
+
+        console.log("Reverse:", Number(15));
+
+    </script>
+</body>
+
+</html>
